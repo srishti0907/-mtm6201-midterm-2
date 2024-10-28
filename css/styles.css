@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #daca1c;
+}
+
+header {
+    background-color: #040403;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out; /* Slide-in animation for the header */
+}
+
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #f8f9fa; /* Change link color on hover */
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease-in; /* Fade-in animation for main content */
+}
+
+.responsive {
+    max-width: 30%;
+    height: auto; /* Set to auto for responsive images */
+    margin: 1em; /* Adjust margin */
+    transition: transform 0.5s ease; /* Add transition for scaling effect */
+}
+
+.responsive:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+.image-rotate {
+    animation: rotate 5s linear infinite; /* Infinite rotation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+form {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #d52b1e;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+button:hover {
+    background-color: #a21813;
+    transform: scale(1.1); /* Slightly scale the button on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #d52b1e;
+    color: white;
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%); /* Start from above */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at normal position */
+        opacity: 1; /* End visible */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        opacity: 1; /* End visible */
+    }
+}
